@@ -1,4 +1,3 @@
-;; after git tutorial
 ;; binding x to be easier to hit
 (define-key key-translation-map [?\C-x] [?\C-t])
 (define-key key-translation-map [?\C-t] [?\C-x])
@@ -62,10 +61,7 @@
  '(ido-mode 'both nil (ido))
  '(line-move-visual t)
  '(line-number-mode t)
- '(package-selected-packages '(vlf))
- '(tool-bar-max-label-size 304)
- '(tool-bar-position 'top)
- '(tool-bar-style 'image))
+ '(package-selected-packages '(vlf)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
