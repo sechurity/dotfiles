@@ -4,6 +4,7 @@
 (define-key key-translation-map [?\C-t] [?\C-x])
 (define-key key-translation-map [?\M-x] [?\M-t])
 (define-key key-translation-map [?\M-t] [?\M-x])
+;; nope 
 
 ;; enable elpa and melpa
 (setq package-archives
