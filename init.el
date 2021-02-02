@@ -1,4 +1,3 @@
-;; after git tutorial
 ;; binding x to be easier to hit
 (define-key key-translation-map [?\C-x] [?\C-t])
 (define-key key-translation-map [?\C-t] [?\C-x])
@@ -18,6 +17,12 @@
 ;; swapping meta and super
 (setq x-super-keysym 'meta)
 (setq x-meta-keysym 'super)
+
+;; swapping meta and super (mac)
+(when (eq system-type 'darwin)
+  (setq mac-option-modifier 'super)
+  (setq mac-command-modifier 'meta)
+  )
 
 
 (custom-set-variables
