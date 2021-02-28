@@ -10,6 +10,11 @@
  '(("gnu" . "http://elpa.gnu.org/packages/")
    ("melpa" . "http://melpa.org/packages/")))
 
+;; install packages
+(package-refresh-contents)
+(setq package-selected-packages '(speed-type))
+(package-install-selected-packages)
+
 ;; apropos sorting results by relevancy
 (setq apropos-sort-by-scores t)
 
@@ -17,7 +22,7 @@
 
 ;; swapping meta and super
 (setq x-super-keysym 'meta)
-(setq x-meta-keysym 'super)
+;;(setq x-meta-keysym 'super)
 
 ;; swapping meta and super (mac)
 (when (eq system-type 'darwin)
