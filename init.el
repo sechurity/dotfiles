@@ -24,7 +24,8 @@
 ;; install packages:
 ;; speed-type
 (package-refresh-contents)
-(setq package-selected-packages '((speed-type) (solorized-theme))
+(setq package-selected-packages '(speed-type
+                                  solorized-theme))
 (package-install-selected-packages)
 
 ;; apropos sorting results by relevancy
